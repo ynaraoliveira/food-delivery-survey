@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="image responsive-img">
+    <img src="images/food.jpg" alt="background-food-img">
+  </div>
+
+  <div class="intro">
+    <h1 id="title">Food Delivery Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve our services</p>
+  </div>
+
+
+<!-- Form Section -->
+
+  <div class="box responsive-box">
+    <form class="" id="survey-form" action="index.html" method="post">
+
+      <div class="survey-box">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+
+      <div class="survey-box">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+      <div class="survey-box">
+        <label for="age">
+          <p>Age <span>(optional)</span>:</p>
+        </label>
+        <input type="number" name="age" id="age" class="form-control" min="10" max="99" placeholder="Age">
+      </div>
+
+      <div class="survey-box">
+        <p>How often do you order food through our app?</p>
+        <label>
+          <input type="radio" name="order" value="less than 2" class="input-radio" checked>
+          Less than twice a week
+        </label>
+        <label>
+          <input type="radio" name="order" value="less than 2 more than 4" class="input-radio" checked>
+          Between 2-4 times a week
+        </label>
+        <label>
+          <input type="radio" name="order" value="more than 4" class="input-radio" checked>
+          More than 4 times a week
+        </label>
+      </div>
+
+      <div class="survey-box">
+        <p>
+          When do you usually order food?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+        <label>
+          <input type="checkbox" name="prefer" value="morning" class="input-checkbox">
+          Morning
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="afternoon" class="input-checkbox">
+          Afternoon
+        </label>
+        <label>
+          <input type="checkbox" name="prefer" value="evening" class="input-checkbox">
+          Evening/Night
+        </label>
+      </div>
+
+      <div class="survey-box">
+        <p>How much do you spend on per week on delivery?</p>
+        <select id="most-like" class="form-control" name="mostLike">
+          <option disabled selected value>Select an option</option>
+          <option value="less than 30">Less than R$ 30,00</option>
+          <option value="30-60">Between R$ 30,00 and R$ 60,00</option>
+          <option value="60-100">Between R$ 60,00 and R$ 100,00</option>
+          <option value="more than 100">More than R$ 100,00</option>
+        </select>
+      </div>
+
+      <div class="survey-box">
+        <p>
+          What would you like to see improved?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+        <label>
+          <input type="checkbox" name="improve" value="delivery-speed" class="input-checkbox">
+          Delivery speed
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="delivery-price" class="input-checkbox">
+          Delivery price
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="more-options" class="input-checkbox">
+          More options of restaurants
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="restrictive-diet" class="input-checkbox">
+          More menu options for people with a restricted diet
+        </label>
+        <label>
+          <input type="checkbox" name="improve" value="minimun-order" class="input-checkbox">
+          No restrictions for minimun order
+        </label>
+      </div>
+
+      <div class="survey-box">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comment here..."rows="8" cols="80"></textarea>
+      </div>
+
+      <div class="survey-box">
+        <button id="button" type="button" name="button">
+          Submit
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+
+
+
+</body>
+
+</html>
