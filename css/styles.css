@@ -1,17 +1,15 @@
-.image {
-  width: 100%;
-  position: absolute;
+
+
+/* Background-image */
+
+body {
+  background-image: url(../images/food-opc.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.responsive-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.responsive-box {
-  max-width: 100%;
-  height: auto;
-}
 
 #title {
   font-family: 'PT Sans', sans-serif;
@@ -20,9 +18,11 @@
   font-size: 4rem;
   margin-top: 0;
   padding-top: 5%;
+  text-align: center;
 }
 
 #description {
+  text-align: center;
 
 }
 
@@ -31,8 +31,6 @@
 }
 
 .intro {
-  position: relative;
-  text-align: center;
   margin-bottom: 3rem;
   font-weight: bold;
 }
@@ -43,24 +41,38 @@ body {
   font-size: 1.2rem;
 }
 
-img {
-  width: 100%;
-  opacity: 0.5;
-}
 
-span {
 
-}
 
 /* Form Section */
 
 .box {
-  display: table;
+  display: block;
   background-color: #ec823a;
   opacity: 0.8;
   padding: 20px;
-  width: 55%;
+  width: 50%;
   margin: auto;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+
+@media (max-width: 900px) {
+  .box {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  #title {
+    width: 80%;
+    margin: auto;
+  }
+  #description {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 1rem;
+  }
 }
 
 #survey-form {
@@ -81,6 +93,7 @@ label, input {
   display: flex;
 }
 
+
 span {
   font-size: 1rem;
 }
@@ -93,6 +106,7 @@ span {
 }
 
 .input-textarea {
+  width: 90%;
   min-height: 120px;
   padding: 10px;
   margin-bottom: 50px;
