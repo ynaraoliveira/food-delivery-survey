@@ -27,7 +27,7 @@
     <form id="survey-form" action="index.html" method="post">
 
       <div class="survey-box">
-        <label for="name">Name:</label>
+        <label for="name" >Name:</label>
         <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
       </div>
 
@@ -38,25 +38,27 @@
 
       <div class="survey-box">
         <label for="age">
-          <p>Age <span>(optional)</span>:</p>
+          <p class="age">Age <span>(optional)</span>:</p>
         </label>
-        <input type="number" name="age" id="age" class="form-control" min="10" max="99" placeholder="Age">
+        <input type="number" name="age" id="age" class="form-control" min="10" max="99" placeholder="Age" required>
       </div>
 
       <div class="survey-box">
         <p>How often do you order food through our app?</p>
+        <div class="input-text">
         <label>
-          <input type="radio" name="order" value="less than 2" class="input-radio" checked>
+          <input type="radio" name="order" value="less than 2" checked>
           Less than twice a week
         </label>
         <label>
-          <input type="radio" name="order" value="less than 2 more than 4" class="input-radio" checked>
+          <input type="radio" name="order" value="less than 2 more than 4" checked>
           Between 2-4 times a week
         </label>
         <label>
-          <input type="radio" name="order" value="more than 4" class="input-radio" checked>
+          <input type="radio" name="order" value="more than 4" checked>
           More than 4 times a week
         </label>
+      </div>
       </div>
 
       <div class="survey-box">
@@ -64,18 +66,20 @@
           When do you usually order food?
           <span class="clue">(Check all that apply)</span>
         </p>
+        <div class="input-text">
         <label>
-          <input type="checkbox" name="prefer" value="morning" class="input-checkbox">
+          <input type="checkbox" name="prefer" value="morning">
           Morning
         </label>
         <label>
-          <input type="checkbox" name="prefer" value="afternoon" class="input-checkbox">
+          <input type="checkbox" name="prefer" value="afternoon">
           Afternoon
         </label>
         <label>
-          <input type="checkbox" name="prefer" value="evening" class="input-checkbox">
+          <input type="checkbox" name="prefer" value="evening">
           Evening/Night
         </label>
+      </div>
       </div>
 
       <div class="survey-box">
@@ -94,26 +98,28 @@
           What would you like to see improved?
           <span class="clue">(Check all that apply)</span>
         </p>
+        <div class="input-text">
         <label>
-          <input type="checkbox" name="improve" value="delivery-speed" class="input-checkbox">
+          <input type="checkbox" name="improve" value="delivery-speed">
           Delivery speed
         </label>
         <label>
-          <input type="checkbox" name="improve" value="delivery-price" class="input-checkbox">
+          <input type="checkbox" name="improve" value="delivery-price">
           Delivery price
         </label>
         <label>
-          <input type="checkbox" name="improve" value="more-options" class="input-checkbox">
+          <input type="checkbox" name="improve" value="more-options">
           More options of restaurants
         </label>
         <label>
-          <input type="checkbox" name="improve" value="restrictive-diet" class="input-checkbox">
+          <input type="checkbox" name="improve" value="restrictive-diet">
           More menu options for people with a restricted diet
         </label>
         <label>
-          <input type="checkbox" name="improve" value="minimun-order" class="input-checkbox">
+          <input type="checkbox" name="improve" value="minimun-order">
           No restrictions for minimun order
         </label>
+      </div>
       </div>
 
       <div class="survey-box">
